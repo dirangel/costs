@@ -5,7 +5,7 @@ import Message from '../layout/Message'
 import Container from '../layout/Container'
 import LinkButton from '../layout/LinkButton'
 import ProjectCard from '../project/ProjectCard'
-import Loading from '../../components/layout/Loading'
+import Loading from '../layout/Loading'
 
 import styles from './Projects.module.css'
 
