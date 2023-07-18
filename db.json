@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Projeto01",
-      "budget": "54.7752",
+      "budget": "60000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -12,11 +12,11 @@
       "id": 1
     },
     {
-      "name": "Projeto02",
-      "budget": "25.844",
+      "name": "Projeto02 - Edit",
+      "budget": "29.000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
@@ -24,7 +24,7 @@
     },
     {
       "name": "Projeto03",
-      "budget": "93.455",
+      "budget": "60000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -34,30 +34,30 @@
       "id": 3
     },
     {
-      "name": "Projeto04",
-      "budget": "77.300",
+      "name": "Projeto04 - Edit",
+      "budget": "25000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
       "id": 4
     },
     {
-      "name": "Projeto05",
-      "budget": "12.588",
+      "name": "Projeto05 - Edit",
+      "budget": "52.000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
       "id": 5
     },
     {
-      "name": "Projeto06",
-      "budget": "33.000",
+      "name": "Projeto06 - Edit",
+      "budget": "15.000",
       "category": {
         "id": "4",
         "name": "Planejamento"
@@ -65,39 +65,6 @@
       "cost": 0,
       "services": [],
       "id": 6
-    },
-    {
-      "name": "Projeto07",
-      "budget": "16.120",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "Projeto08",
-      "budget": "8.000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "name": "Projeto09",
-      "budget": "65.500",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 9
     }
   ],
   "categories": [
