@@ -8,6 +8,7 @@ import Container from '../layout/Container'
 import ProjectForm from  '../project/ProjectForm'
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm'
+import ServiceCard from '../service/ServiceCard'
 
 
 function Project(){
@@ -15,6 +16,7 @@ function Project(){
         const { id } = useParams()
 
         const [project, setProject] = useState([])
+        const [services, setSevices] = useState([])
         const [showProjectForm, setShowProjectForm] = useState(false)
         const [showServiceForm, setShowServiceForm] = useState(false)
         const [message, setMessage] = useState()
@@ -30,10 +32,38 @@ function Project(){
             }).then((resp) => resp.json())
               .then((data) => {
                 setProject(data)
+                setSevices(data.services)
               })
               .catch((err) => console.log(err))
           }, 500);
         }, [id])
+
+        function editPost(project){
+          setProject('')
+
+          console.log('Budget: ', project.budget)
+          console.log('Cost: ', project.cost)
+          if(project.budget < project.cost){
+            setMessage('O orçamento não pode ser menor que o custo do projeto')
+            setType('error')
+            return false
+          }
+
+          const fet = fetch(`http://localhost:5000/projects/${project.id}`, {
+          method: 'PATCH',
+          headers: {
+            'content-type': 'application/json',
+          },
+          body: JSON.stringify(project),
+        }).then(resp => resp.json())
+          .then((data) => {
+            setProject(data)
+            setShowProjectForm(false)
+            setMessage('Projeto atualizado!')
+            setType('success')
+          })
+          .catch((err) => console.log(err))
+        }
 
         function createService(project){
           setMessage('')
@@ -66,38 +96,12 @@ function Project(){
             body: JSON.stringify(project)
           }).then(resp => resp.json())
             .then((data) => {
-              console.log(data)
+              setShowServiceForm(false)
             })
             .catch((err) => console.log(err))
         }
 
-
-        function editPost(project){
-          setProject('')
-
-          console.log('Budget: ', project.budget)
-          console.log('Cost: ', project.cost)
-          if(project.budget < project.cost){
-            setMessage('O orçamento não pode ser menor que o custo do projeto')
-            setType('error')
-            return false
-          }
-
-          const fet = fetch(`http://localhost:5000/projects/${project.id}`, {
-          method: 'PATCH',
-          headers: {
-            'content-type': 'application/json',
-          },
-          body: JSON.stringify(project),
-        }).then(resp => resp.json())
-          .then((data) => {
-            setProject(data)
-            setShowProjectForm(false)
-            setMessage('Projeto atualizado!')
-            setType('success')
-          })
-          .catch((err) => console.log(err))
-        }
+        function removeService(){}
 
         function toggleProjectForm(){
           setShowProjectForm(!showProjectForm)
@@ -156,8 +160,20 @@ function Project(){
                       </div>
                     </div>
                     <h2>Serviços</h2>
-                    <Container>
-                      <p>Itens de serviços</p>
+                    <Container customClass="start">
+                      {services.length > 0 &&
+                            services.map((services) => (
+                              <ServiceCard
+                                id={services.id}
+                                name={services.name}
+                                cost={services.cost}
+                                description={services.description}
+                                key={services.id}
+                                handleRemove={removeService}
+                              />
+                            ))
+                      }
+                      {services.length === 0 &&  <p>Não há serviços cadastrados.</p>}
                     </Container>
                </div>
               ) : (<Loading/>)}
