@@ -11,8 +11,9 @@ function Project(){
 
         const { id } = useParams()
 
-        const [ project, setProject ] = useState([])
+        const [project, setProject] = useState([])
         const [showProjectForm, setShowProjectForm] = useState(false)
+        const [showServiceForm, setShowServiceForm] = useState(false)
         const [message, setMessage] = useState()
         const [type, setType] = useState()
 
@@ -28,12 +29,14 @@ function Project(){
                 setProject(data)
               })
               .catch((err) => console.log(err))
-          }, 1000);
+          }, 500);
         }, [id])
 
 
 
         function editPost(project){
+          setProject('')
+
           console.log('Budget: ', project.budget)
           console.log('Cost: ', project.cost)
           if(project.budget < project.cost){
@@ -63,12 +66,15 @@ function Project(){
           setShowProjectForm(!showProjectForm)
         }
 
+        function toggleServiceForm(){
+          setShowServiceForm(!showServiceForm)
+        }
 
         return(
             <>
              {project.name ? (
                <div className={styles.project_details}>
-                  <Container customClass="column">
+                  <Container customClass="column"></Container>
                     {message && <Message  type={type} msg={message}/>}
                     <div className={styles.details_container}>
                       <h1>Projeto: {project.name}</h1>
@@ -97,7 +103,21 @@ function Project(){
                         </div>
                       )}
                     </div>
-                    </Container>
+                    <div className={styles.service_form_container}>
+                        <h2>Adicione um serviço:</h2>
+                        <button className={styles.btn} onClick={toggleServiceForm}>
+                        {!showServiceForm ? 'Adicionar serviço' : 'Fechar'}
+                      </button>
+                      <div className={styles.project_info}>
+                        {showServiceForm &&
+                          <div>Formulário do serviço</div>
+                        }
+                      </div>
+                      <h2>Serviços</h2>
+                      <Container>
+                        <p>Itens de serviços</p>
+                      </Container>
+                    </div>
                </div>
               ) : (<Loading/>)}
            </>

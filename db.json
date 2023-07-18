@@ -12,8 +12,8 @@
       "id": 1
     },
     {
-      "name": "Projeto02 - Edit",
-      "budget": "29.000",
+      "name": "Projeto02",
+      "budget": "25800",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -46,7 +46,7 @@
     },
     {
       "name": "Projeto05 - Edit",
-      "budget": "52.000",
+      "budget": "52000",
       "category": {
         "id": "4",
         "name": "Planejamento"
@@ -57,7 +57,7 @@
     },
     {
       "name": "Projeto06 - Edit",
-      "budget": "15.000",
+      "budget": "15000",
       "category": {
         "id": "4",
         "name": "Planejamento"
