@@ -18,8 +18,93 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1000,
+      "services": [
+        {
+          "name": "cvnv n",
+          "cost": "226",
+          "description": "cvnvcnx",
+          "id": "c99e5999-53c0-4061-800e-49cdb797e0e6"
+        },
+        {
+          "name": "cvnv n",
+          "cost": "226",
+          "description": "cvnvcnx",
+          "id": "3ac62e53-6ed2-4f97-9f7c-8112d1d78b8f"
+        },
+        {
+          "name": "rwefa",
+          "cost": "11",
+          "description": "sfdhf ",
+          "id": "7016cc97-97a3-4fdb-ae27-716865efe1ea"
+        },
+        {
+          "name": "rwefa",
+          "cost": "11",
+          "description": "sfdhf ",
+          "id": "7016cc97-97a3-4fdb-ae27-716865efe1ea"
+        },
+        {
+          "name": "nb,bn,",
+          "cost": "300",
+          "description": "hdhfd",
+          "id": "42838672-85f4-4c19-8531-559ece01dded"
+        },
+        {
+          "name": "nb,bn,",
+          "cost": "23",
+          "description": "hdhfd",
+          "id": "55db58a4-1c5d-4290-970f-a415d3d7b8e2"
+        },
+        {
+          "name": "nb,bn,",
+          "cost": "25",
+          "description": "hdhfd",
+          "id": "2999a7e7-aa08-410f-8501-e91669892d48"
+        },
+        {
+          "name": "nb,bn,",
+          "cost": "25",
+          "description": "hdhfd",
+          "id": "2999a7e7-aa08-410f-8501-e91669892d48"
+        },
+        {
+          "name": "nb,bn,",
+          "cost": "25",
+          "description": "hdhfd",
+          "id": "2999a7e7-aa08-410f-8501-e91669892d48"
+        },
+        {
+          "name": "nb,bn,",
+          "cost": "25",
+          "description": "hdhfd",
+          "id": "2999a7e7-aa08-410f-8501-e91669892d48"
+        },
+        {
+          "name": "nb,bn,",
+          "cost": "25",
+          "description": "hdhfd",
+          "id": "2999a7e7-aa08-410f-8501-e91669892d48"
+        },
+        {
+          "cost": "78",
+          "name": "fdgjhd",
+          "description": "fdh",
+          "id": "72f63c59-bec5-4ccb-9690-80a965faf5a0"
+        },
+        {
+          "cost": "-100",
+          "name": "fdgjhd",
+          "description": "fdh",
+          "id": "98c22c9f-4ba7-4c26-8758-8673745900d0"
+        },
+        {
+          "cost": "100",
+          "name": "fdgjhd",
+          "description": "fdh",
+          "id": "99196c73-63b1-42f2-85e2-3162b85d8bdc"
+        }
+      ],
       "id": 2
     },
     {
@@ -40,8 +125,21 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 21200,
+      "services": [
+        {
+          "name": "Novo serviço de cloud",
+          "cost": "21000",
+          "description": "Infraestrutura",
+          "id": "b82ee280-6bcf-451f-ad47-b65046458523"
+        },
+        {
+          "name": "Novo serviço de cloud",
+          "cost": "200",
+          "description": "Infraestrutura",
+          "id": "8760ee52-3f27-4e55-8fe5-70e3a8ae8279"
+        }
+      ],
       "id": 4
     },
     {
@@ -62,8 +160,27 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 6600,
+      "services": [
+        {
+          "name": "Novo serviço",
+          "cost": "2000",
+          "description": "Incluindo gasto do projeto",
+          "id": "c9024396-4fc5-4a66-8177-4f0698099d6f"
+        },
+        {
+          "name": "Novo serviço",
+          "cost": "4500",
+          "description": "Incluindo outro gasto",
+          "id": "5f9f8715-f48d-44a6-b8ee-8dfbebdab6c0"
+        },
+        {
+          "name": "Novo serviço",
+          "cost": "100",
+          "description": "Incluindo outro gasto",
+          "id": "a2f8a5ec-68a2-4644-88fe-5be2809c07f0"
+        }
+      ],
       "id": 6
     }
   ],
