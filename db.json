@@ -18,27 +18,8 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 34000,
-      "services": [
-        {
-          "name": "Serviço adicionar 001 - Project02",
-          "cost": "3500",
-          "description": "Implantação de teste",
-          "id": "37878712-5c41-4320-9e7a-714d966f54ea"
-        },
-        {
-          "name": "Serviço adicionar 002 - Project02",
-          "description": "Desenvolvedor PHP",
-          "cost": "8000",
-          "id": "5d177d7a-7cb8-49ee-a45e-9a817b205b50"
-        },
-        {
-          "name": "Serviço adicional 003 - Project02",
-          "cost": "11000",
-          "description": "QA Sr",
-          "id": "e3d8b710-2b7a-443f-9947-c295ddeb4c6b"
-        }
-      ],
+      "cost": 11500,
+      "services": [],
       "id": 3
     },
     {
@@ -48,13 +29,13 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 21200,
+      "cost": 197,
       "services": [
         {
-          "name": "Novo serviço de cloud",
-          "cost": "21000",
-          "description": "Infraestrutura",
-          "id": "b82ee280-6bcf-451f-ad47-b65046458523"
+          "name": "teste1",
+          "cost": "1",
+          "description": "teste1",
+          "id": "82949f01-bd39-4ecf-815d-a800b4b63246"
         }
       ],
       "id": 4
